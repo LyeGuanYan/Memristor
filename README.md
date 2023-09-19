@@ -15,3 +15,6 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 8. Use the manual probing feature to observe the voltage or current across different points in the simulation circuit.
 
 It is recommended that you read the user guide and other support resources available to you to get the most out of the software tool. If you have any questions or issues, don't hesitate to reach out to the support team for assistance.
+
+
+LTspice XVII
