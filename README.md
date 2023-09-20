@@ -77,7 +77,7 @@ The first step in simulating the memristor models in LTspice is to generate its 
 
 
 <p align="center">
-<img width="210" alt="A Joglekar memristor symbol generated in LTspice" src="https://github.com/LyeGuanYan/Memristor/assets/93908638/484596c8-2abe-447b-89b7-9ef3b8fd8393">
+<img width="210" alt="A Joglekar memristor symbol generated in LTspice.png" src="https://github.com/LyeGuanYan/Memristor/blob/6de99c95750f142b41021ca55807e5538bb6bfa9/A%20Joglekar%20memristor%20symbol%20generated%20in%20LTspice.png">
 </p>
 <p align="center">Fig.4 A Joglekar memristor symbol generated in LTspice</p> 
 
