@@ -30,29 +30,30 @@ The following mathematical modelling of such parasitic effects in the memristor 
 
 The resistance loss due to wire is calculated by eq.1 and it is dependent on the material of wire, length, and cross section area of the wire.
 
-R = ρl/A 
+<p align="center">R = ρl/A </p> 
 
-Where R is the resistance of connecting, ρ is the resistivity of connecting wire and it is affected by types of material of connecting wire, l is the length of connecting wire and A is the cross-sectional area of connecting wire.
+Where R is the resistance of connecting, ρ is the resistivity of connecting wire and it is affected by types of material of connecting wire, l is the length of connecting wire and A is the cross-sectional area of connecting wire[[2]](#2).
 
 **Coupling capacitance mathematical modelling**
 
 The first type of capacitive loss, coupling capacitance, is the capacitive effect formed between two adjacent parallel cross bars, specifically coupling capacitance losses are located between two parallel word lines and bit lines of memristor memory array.
 
-C_p=  (ε_o ε_r dl)/r	[60]
+<p align="center">C_p = (ε_o ε_r dl)/r</p> 
 
 where ε_o is the permittivity of free space, ε_r is the permittivity of the insulator, d is diameter of wire, l is length of each wire and r is distance between two adjacent wires. For a Nth × Nth dimension crossbar network, l=N(d+r). Hence the equation can be rewritten as:
 
-C_p= ε_o ε_r Nd(1+  1/∝) , ∝ =  r/d 
+C_p= ε_o ε_r Nd(1+1/∝), ∝ = r/d 
 
-capacitance, C_p decreases with increasing of distance between two adjacent parallel wire and then as 1/∝ becomes negligibly smaller compared to one, the capacitance becomes almost constant.
+capacitance, C_p decreases with increasing of distance between two adjacent parallel wire and then as 1/∝ becomes negligibly smaller compared to one, the capacitance becomes almost constant[[3]](#3).
 
 ** Boundary stray capacitance mathematical modelling **
 
-The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters [61]. For a more detailed explanation please refer to this the image below. 
+The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters [[4]](#4). For a more detailed explanation please refer to this the image below[[5]](#5). 
 
 <p align="center">
 ![Splitting fringe capacitance of one side to several subcomponents](https://github.com/LyeGuanYan/Memristor/assets/93908638/915b86a0-be49-4a24-99c8-9d02254ab37b)
 </p>
+<p align="center">Fig.2 Splitting fringe capacitance of one side to several subcomponents</p> 
 
 # Methodology
 
@@ -72,5 +73,12 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 8. Use the manual probing feature to observe the voltage or current across different points in the simulation circuit.
 
 # Reference
-<a id="1">[1]</a> M. E. Fouda, A. M. Eltawil, and F. Kurdahi, “Modeling and Analysis of Passive Switching Crossbar Arrays,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 65, no. 1, pp. 270–282, Jan. 2018, doi: 10.1109/TCSI.2017.2714101.
+<a id="1">[1]</a> S. Liu, Y. Wang, M. Fardad, and P. K. Varshney, “A Memristor-Based Optimization Framework for Artificial Intelligence Applications,” IEEE Circuits and Systems Magazine, vol. 18, no. 1, pp. 29–44, Jan. 2018, doi: 10.1109/MCAS.2017.2785421.
 
+<a id="2">[2]</a> M. E. Fouda, A. M. Eltawil, and F. Kurdahi, “Modeling and Analysis of Passive Switching Crossbar Arrays,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 65, no. 1, pp. 270–282, Jan. 2018, doi: 10.1109/TCSI.2017.2714101.
+
+<a id="3">[3]</a> A. Raychowdhury and K. Roy, “Performance estimation of molecular crossbar architecture considering capacitive and inductive coupling between interconnects.”
+
+<a id="4">[4]</a> A. Husain, “Models for interconnect capacitance extraction,” in Proceedings - International Symposium on Quality Electronic Design, ISQED, IEEE Computer Society, 2001, pp. 167–172. doi: 10.1109/ISQED.2001.915222.
+
+<a id="5">[5]</a> G. Shomalnasab and L. Zhang, “New Analytic Model of Coupling and Substrate Capacitance in Nanometer Technologies,” IEEE Trans Very Large Scale Integr VLSI Syst, vol. 23, no. 7, pp. 1268–1280, Jul. 2015, doi: 10.1109/TVLSI.2014.2334492.
