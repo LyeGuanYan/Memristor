@@ -57,6 +57,10 @@ The second type of capacitive parasitic effect, the boundary stray capacitance i
 
 # Methodology
 
+<p align="center">
+<img width="210" alt="Flow Chart of the methodology of the entire project" src="https://github.com/LyeGuanYan/Memristor/assets/93908638/d26f257e-3059-440b-822d-09dab724aefb">
+</p>
+<p align="center">Flow Chart of the methodology of the entire project</p>
 
 The above image is a block diagram of the methodology carried out in this research project. In the first half of this research, modelling of memristors using the LTspice simulation software is carried out to closely examine and study the characteristics of singular memristor unit or multiple memristor in a cross bar setting. In this part, the research will also explore the effect of physical losses present in the cross bar structure by including line resistance and parasitic capacitance loss to the simulation circuits.
 
@@ -67,7 +71,6 @@ When the simulation ends, the code will then display the activation states of ea
 
 # Installation
 **Note that this software is working only if LTspice XVII is pre-downloaded**
-![Flow Chart of the methodology of the entire project](https://github.com/LyeGuanYan/Memristor/assets/93908638/d26f257e-3059-440b-822d-09dab724aefb)
 
 To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory using Memristors, follow these steps:
 1. Download and install the software on your computer.
