@@ -128,7 +128,10 @@ Lastly, the current flowing through the Joglekar memristor can be related to exp
 
 **Results of the circuit level tool**
 
-Picture
+<p align="center">
+<img width="210" alt="Graphical User Interface (GUI)" src="https://github.com/LyeGuanYan/Memristor/blob/0b34e19f8affd32ba7349b3a30662f7537b61f16/Graphical%20User%20Interface%20(GUI).png">
+</p>
+<p align="center">Fig.10 Graphical User Interface (GUI)</p>
 
 Fig. 85 above shows the graphical user interface (GUI) of the circuit level tool. Users are with the flexibility to select and customise the simulation parameters to generate the desired memory cross bar circuit. 
 
