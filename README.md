@@ -3,8 +3,9 @@ The Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory using Mem
 
 The tool is significant because it helps to ease the researchers' job and enable faster development of memristor-based technology. It is particularly useful in the simulation of memristor cross bar arrays, which plays an important role in collecting data and studying the characteristics of memristors. As the array size increases, the difficulties increase exponentially in designing the cross bar array circuit manually. Therefore, the tool is a valuable asset to help streamline the circuit design process and help researchers free up valuable time to explore new applications for memristor technology.
 
+# Installation
+## Note that this software is working only if LTspice XVII is pre-downloaded.
 To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory using Memristors, follow these steps:
-
 1. Download and install the software on your computer.
 2. Create an account and log in to the software.
 3. Familiarize yourself with the user interface and the different features available.
@@ -17,4 +18,4 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 It is recommended that you read the user guide and other support resources available to you to get the most out of the software tool. If you have any questions or issues, don't hesitate to reach out to the support team for assistance.
 
 
-LTspice XVII
+
