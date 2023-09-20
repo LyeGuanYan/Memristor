@@ -24,7 +24,7 @@ Fig.1 [[1]](#1) above shows the schematic diagram of a memristor cross bar array
 
 The mathematical modelling of memristor cross bay array circuit with parasitic effects has been discussed before by many pervious research papers. The three main types of losses considered in this thesis are the line resistance, coupling capacitance and boundary stray capacitance. The line resistance losses are due to the resistivity of the material present along the cross bars (word lines/bit lines). Coupling capacitance is the capacitive effect located between two parallel adjacent cross bars; while the boundary stray capacitance is the capacitive effect formed between the substrate plane (ground) and the interconnected memristor block. 
 
-The following mathematical modelling of such parasitic effects in the memristor cross bar array is a general calculation for computing the values of loss element components (resistance or capacitance). The line resistance loss can be calculate using the following equation 1 and is dependent on the type of cross bar material, cross bar length, and cross-sectional area of the cross bar.
+The following mathematical modelling of such parasitic effects in the memristor cross bar array is a general calculation for computing the values of loss element components (resistance or capacitance). The line resistance loss can be calculate using the following equation and is dependent on the type of cross bar material, cross bar length, and cross-sectional area of the cross bar.
 
 **Line Resistance mathematical modelling**
 
@@ -57,14 +57,11 @@ The second type of capacitive parasitic effect, the boundary stray capacitance i
 
 # Methodology
 
-<p align="center">
-<img width="210" alt="Flow Chart of the methodology of the entire project" src="https://github.com/LyeGuanYan/Memristor/assets/93908638/d26f257e-3059-440b-822d-09dab724aefb">
-</p>
-![Flow Chart of the methodology of the entire project](https://github.com/LyeGuanYan/Memristor/assets/93908638/d26f257e-3059-440b-822d-09dab724aefb)
-<p align="center">Flow Chart of the methodology of the entire project</p>
+![Flow Chart of the methodology of the entire project](https://github.com/LyeGuanYan/Memristor/assets/93908638/407bfab5-ae00-4fc0-ae70-e9367e3ab28a)
+<p align="center">Fig.3 Flow Chart of the methodology of the entire project</p>
 
 The above image is a block diagram of the methodology carried out in this research project. In the first half of this research, modelling of memristors using the LTspice simulation software is carried out to closely examine and study the characteristics of singular memristor unit or multiple memristor in a cross bar setting. In this part, the research will also explore the effect of physical losses present in the cross bar structure by including line resistance and parasitic capacitance loss to the simulation circuits.
-![Flow Chart of the methodology of the entire project](https://github.com/LyeGuanYan/Memristor/assets/93908638/407bfab5-ae00-4fc0-ae70-e9367e3ab28a)
+
 
 Following that, the second half of the research will be using python code to automate the process of constructing and simulating memristor cross bar arrays in LTspice based on simulation parameters given by user. The code for the circuit level tool is designed with modularity, scalability and ease of use in mind. This is because the same code can be used to generate the cross bar array of varying sizes for different memristor models. The python code is used to issue commands to the LTspice simulation software to build the memristor array and set the simulation parameters (input signal, stop time and activation state of the memristor) determined by the user.  
 
