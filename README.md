@@ -46,13 +46,11 @@ C_p= ε_o ε_r Nd(1+1/∝), ∝ = r/d
 
 capacitance, C_p decreases with increasing of distance between two adjacent parallel wire and then as 1/∝ becomes negligibly smaller compared to one, the capacitance becomes almost constant[[3]](#3).
 
-** Boundary stray capacitance mathematical modelling **
+**Boundary stray capacitance mathematical modelling**
 
-The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters [[4]](#4). For a more detailed explanation please refer to this the image below[[5]](#5). 
+The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters[[4]](#4). For a more detailed explanation please refer to this the image below[[5]](#5). 
 
-<p align="center">
-![Splitting fringe capacitance of one side to several subcomponents](https://github.com/LyeGuanYan/Memristor/assets/93908638/915b86a0-be49-4a24-99c8-9d02254ab37b)
-</p>
+
 <p align="center">Fig.2 Splitting fringe capacitance of one side to several subcomponents</p> 
 
 # Methodology
