@@ -69,21 +69,46 @@ When the simulation ends, the code will then display the activation states of ea
 
 **Library of different memristor models**
 
-The different memristor models simulated in this research is sourced from an educational blogpost called Knowm (https://knowm.org/memristor-models-in-ltspice/). This blogpost provided 5 different LTspice simulation memristor models, which are Joglekar Window, Biolek Window, Yakopic, University of Michigan, and Knowm memristor models.
+The different memristor models simulated in this research is sourced from an educational blogpost called Knowm (https://knowm.org/memristor-models-in-ltspice/). This blogpost provided 5 different LTspice simulation memristor models, which are **Joglekar Window**, **Biolek Window**, **Yakopic**, **University of Michigan**, and **Knowm** memristor models.
 
 Following that, each one of these memristor models are to be simulated in LTspice one by one to analyse the unique characteristics of each memristor unit. Memristors are unique because they are capable of retaining their previous state due to their special hysteresis characteristic. Hence, simulations for each of the 5 memristor models are required to confirm that hysteresis is present in each of the memristor simulations when the memristor is operating under ideal conditions.
 
 The first step in simulating the memristor models in LTspice is to generate its corresponding symbol in the LTspice library from its sub file. The memristor symbol generated is shown in the image below. It is in a rectangle shape and have 3 pins in total, the pins are labelled as the Top Electrode (TE), Bottom Electrode (BE) and the XSV pin. The TE and BE is a representation of a real memristor’s top and bottom electrodes, while the XSV pin is used to read the voltage across the memristor which can be used to determine the state of the memristor.
-
 
 <p align="center">
 <img width="210" alt="A Joglekar memristor symbol generated in LTspice.png" src="https://github.com/LyeGuanYan/Memristor/blob/6de99c95750f142b41021ca55807e5538bb6bfa9/A%20Joglekar%20memristor%20symbol%20generated%20in%20LTspice.png">
 </p>
 <p align="center">Fig.4 A Joglekar memristor symbol generated in LTspice</p> 
 
-
-
 After constructing a basic circuit as depicted in the image below, a memristor model can be simulated with either a sine wave input signal or a Piecewise Linear (PWL) function using the txt file attached to the appendix of this research thesis. A PWL function is defined as a waveform constructed by a series of straight-line segments connecting the points defined by the user, this is typically used to define voltage or current sources[[6]](#6).
+
+<p align="center">
+<img width="210" alt="A basic Memristor Circuit in LTspice.png" src="https://github.com/LyeGuanYan/Memristor/blob/5dd81ea2a2bfe2ff35c05d1b6dcfab0658dc8954/A%20basic%20Memristor%20Circuit%20in%20LTspice..png">
+</p>
+<p align="center">Fig.5 A basic Memristor Circuit in LTspice.</p> 
+
+Now the simulation of the circuit can begin, the results and graphs showing the performance of the memristor are an important part of the research to establish a basic understanding of memristors and how they operate.
+
+After obtaining the simulation results from the first memristor model, repeat all the above steps for the remaining 4 different memristor models to analyse and study the unique characteristics and ideal operational output of the single memristor unit. The results and conclusions from this part will be applied in later parts to confirm that the automatically code generated simulation circuit of multiple memristors in a cross bar structure is working as intended. 
+
+**Simulation of Joglekar memristor**
+
+This is a case study specifically for the Joglekar model of memristor. It describes the steps and results from simulation of the Joglekar memristor model. First, open the sub file extension downloaded from the Knowm website in LTspice simulation software and create a new symbol for the memristor from the “.SUBCKT MEM_JOGLEKAR TE BE XSV” line of the sub file.
+
+Once the memristor symbol is generated from the sub file, the next step is to incorporate it into a simple circuit with a voltage source and output flag at the XSV pin of the Joglekar memristor as shown in the diagram above. Now the circuit is ready for simulation, the run time for the simulation is set to stop at 200ms.
+
+For the first test, the input signal is set as a sine wave with 10Hz frequency and 0.9 Voltage amplitude. With this input signal the simulation process of the Joglekar memristor model to examine and study the hysteresis of the memristor can begin. The aim of this first simulation is to check for the hysteresis characteristics by plotting the current across the memristor against the voltage across the memristor.
+
+<p align="center">
+<img width="210" alt="I-V graph generated from Joglekar Memristor Circuit Simulation.png" src="https://github.com/LyeGuanYan/Memristor/blob/66c91520796a4f9984e7dd58d3e6cc88b11add69/I-V%20graph%20generated%20from%20Joglekar%20Memristor%20Circuit%20Simulation.png">
+</p>
+<p align="center">Fig.7 I-V graph generated from Joglekar Memristor Circuit Simulation</p>
+
+From the above I-V graph, the green butterfly shape is the hysteresis waveform. From the shape of the I-V graph, the instantaneous value of the memristor’s resistance (low/high state of the memristor) is dependent on the voltage and current excitation. The I-V response is thus an ambiguous curve like a “bowtie” shape, which also depends on the concrete voltage and current waveforms[[7]](#7). Hence, the Joglekar is determined to have the hysteresis characteristics.
+
+The Joglekar memristor under the excitation of a periodical signal with a zero-dc level, the I-V characteristics assumes a typical shape of the hysteresis loop which is pinched at the origin. The non-zero areas on both sides of the graph indicate under excitation, the memristor is capable of retaining its last state (exhibiting memory behaviour)[[8]](#8).
+
+
 
 
 # Installation
@@ -111,3 +136,7 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 <a id="5">[5]</a> G. Shomalnasab and L. Zhang, “New Analytic Model of Coupling and Substrate Capacitance in Nanometer Technologies,” IEEE Trans Very Large Scale Integr VLSI Syst, vol. 23, no. 7, pp. 1268–1280, Jul. 2015, doi: 10.1109/TVLSI.2014.2334492.
 
 <a id="6">[6]</a> Gabino Alonso, “LTspice: Piecewise Linear Functions for Voltage & Current Sources,” Analog Devices, Inc.
+
+<a id="7">[7]</a> M. Zhu, C. Wang, Q. Deng, and Q. Hong, “Locally Active Memristor with Three Coexisting Pinched Hysteresis Loops and Its Emulator Circuit,” International Journal of Bifurcation and Chaos, vol. 30, no. 13, Oct. 2020, doi: 10.1142/S0218127420501849.
+
+<a id="8">[8]</a> Z. Biolek, D. Biolek, and V. Biolkova, “Computation of the area of memristor pinched hysteresis loop,” IEEE Transactions on Circuits and Systems II: Express Briefs, vol. 59, no. 9, pp. 607–611, 2012, doi: 10.1109/TCSII.2012.2208670.
