@@ -22,7 +22,7 @@ Fig.1 [[1]](#1) above shows the schematic diagram of a memristor cross bar array
 
 # Modelling Memristor Cross Bar Array with parasitic effects
 
-The mathematical modelling of memristor cross bay array circuit with parasitic effects has been discussed before by many pervious research papers. The three main types of losses considered in this thesis are the line resistance, coupling capacitance and boundary stray capacitance. The line resistance losses are due to the resistivity of the material present along the cross bars (word lines/bit lines). Coupling capacitance is the capacitive effect located between two parallel adjacent cross bars; while the boundary stray capacitance is the capacitive effect formed between the substrate plane (ground) and the interconnected memristor block. 
+The mathematical modelling of memristor cross bay array circuit with parasitic effects has been discussed before by many pervious research papers. The three main types of losses considered at here are the line resistance, coupling capacitance and boundary stray capacitance. The line resistance losses are due to the resistivity of the material present along the cross bars (word lines/bit lines). Coupling capacitance is the capacitive effect located between two parallel adjacent cross bars; while the boundary stray capacitance is the capacitive effect formed between the substrate plane (ground) and the interconnected memristor block. 
 
 The following mathematical modelling of such parasitic effects in the memristor cross bar array is a general calculation for computing the values of loss element components (resistance or capacitance). The line resistance loss can be calculate using the following equation and is dependent on the type of cross bar material, cross bar length, and cross-sectional area of the cross bar.
 
@@ -80,7 +80,7 @@ The first step in simulating the memristor models in LTspice is to generate its 
 </p>
 <p align="center">Fig.4 A Joglekar memristor symbol generated in LTspice</p> 
 
-After constructing a basic circuit as depicted in the image below, a memristor model can be simulated with either a sine wave input signal or a Piecewise Linear (PWL) function using the txt file attached to the appendix of this research thesis. A PWL function is defined as a waveform constructed by a series of straight-line segments connecting the points defined by the user, this is typically used to define voltage or current sources[[6]](#6).
+After constructing a basic circuit as depicted in the image below, a memristor model can be simulated with either a sine wave input signal or a Piecewise Linear (PWL) function using the txt file generated. A PWL function is defined as a waveform constructed by a series of straight-line segments connecting the points defined by the user, this is typically used to define voltage or current sources[[6]](#6).
 
 <p align="center">
 <img width="210" alt="A basic Memristor Circuit in LTspice.png" src="https://github.com/LyeGuanYan/Memristor/blob/5dd81ea2a2bfe2ff35c05d1b6dcfab0658dc8954/A%20basic%20Memristor%20Circuit%20in%20LTspice..png">
@@ -192,7 +192,7 @@ By analysing the waveform of the input signal and the output voltage of the 1st 
 
 **Maximum memristor array size limit**
 
-The parasitic effects implies that the memristor memory circuit cannot be expanded indefinitely and will have its own unique array size limit. For the assumptions made in this thesis, the parasitic effect for resistive and capacitive elements are to simulate the practical losses in the cross bar array structure. The line resistance is represented by a resistor of 18.22µΩ; the coupling capacitance is represented by a capacitor of 1.68aF; and the boundary stray capacitance is represented by a capacitor of 2.012aF.
+The parasitic effects implies that the memristor memory circuit cannot be expanded indefinitely and will have its own unique array size limit. For the assumptions made at here, the parasitic effect for resistive and capacitive elements are to simulate the practical losses in the cross bar array structure. The line resistance is represented by a resistor of 18.22µΩ; the coupling capacitance is represented by a capacitor of 1.68aF; and the boundary stray capacitance is represented by a capacitor of 2.012aF.
 
 From the simulation with parasitic effects, the current flowing the resistor to the memristor cell is 42µA. The line resistance per memristor cell segment is previously calculated as 18.22µΩ. Using Ohm’s Law, the voltage lost per line resistance cell segment is calculated to be 7.66×10^(-10) V. In this case of this calculation, the supply voltage is assumed to be 1V. Hence, the maximum memristor memory array size limit considering parasitic effect is calculated to be “1.307×10^9x1.307×10^9” array.
 
