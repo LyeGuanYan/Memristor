@@ -80,7 +80,7 @@ The first step in simulating the memristor models in LTspice is to generate its 
 <img width="210" alt="A Joglekar memristor symbol generated in LTspice" src="https://github.com/LyeGuanYan/Memristor/assets/93908638/7d8f9216-1316-48fd-8aca-5f4fa34afa5f">
 </p>
 <p align="center">Fig.4 A Joglekar memristor symbol generated in LTspice</p> 
-![A Joglekar memristor symbol generated in LTspice](https://github.com/LyeGuanYan/Memristor/assets/93908638/90681ff5-540f-45d6-9b35-4074c1121f32)
+
 
 
 After constructing a basic circuit as depicted in the image below, a memristor model can be simulated with either a sine wave input signal or a Piecewise Linear (PWL) function using the txt file attached to the appendix of this research thesis. A PWL function is defined as a waveform constructed by a series of straight-line segments connecting the points defined by the user, this is typically used to define voltage or current sources[[6]](#6).
