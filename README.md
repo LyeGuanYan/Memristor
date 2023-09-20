@@ -108,8 +108,21 @@ From the above I-V graph, the green butterfly shape is the hysteresis waveform. 
 
 The Joglekar memristor under the excitation of a periodical signal with a zero-dc level, the I-V characteristics assumes a typical shape of the hysteresis loop which is pinched at the origin. The non-zero areas on both sides of the graph indicate under excitation, the memristor is capable of retaining its last state (exhibiting memory behaviour)[[8]](#8).
 
+<p align="center">
+<img width="210" alt="Memristor characteristics from Joglekar Memristor Circuit Simulation.png" src="https://github.com/LyeGuanYan/Memristor/blob/884d367910756acdfee965ac4d59060df17a781b/Memristor%20characteristics%20from%20Joglekar%20Memristor%20Circuit%20Simulation.png">
+</p>
+<p align="center">Fig.8 Memristor characteristics from Joglekar Memristor Circuit Simulation</p>
 
+Now for the second test, the input waveform is changed to a PWL input function from the file “data.txt”. From the simulation output result, multiple inferences can be made regarding the performance of the Joglekar memristor. The first waveform on the top represents the input waveform of input PWL file. Next following that, the green waveform is the state voltage of the memristor as recorded from the XSV pin of the memristor block. The third graph is a representation of the current across the memristor as read from the top electrode of the memristor. The last graph is an approximation of the resistance of the memristor calculated by dividing the voltage across the memristor by the current flowing through the memristor. 
 
+From the voltage across the memristor graph, the memristor requires 45ms to change its state from high resistance to low resistance, or vice versa. At high resistance state, the Joglekar memristor has a resistance of approximately 5kΩ; while at low resistance state the Joglekar memristor has a resistance of 100Ω. While the low resistance state of the Joglekar memristor is consistent with the description of the sub file at 100Ω; the high resistance state of the Joglekar memristor detailed in the sub file is 10kΩ. The discrepancy between recorded and coded high resistance value is because the initial voltage across Joglekar memristor is not 0V but 0.56V (half of the voltage required to change the state of the memristor), hence, the calculated high resistance value using Ohm’s Law and the high resistance value listed in the sub file is different.
+
+<p align="center">
+<img width="210" alt="Sub file of Joglekar Memristor.png" src="https://github.com/LyeGuanYan/Memristor/blob/884d367910756acdfee965ac4d59060df17a781b/Sub%20file%20of%20Joglekar%20Memristor.png">
+</p>
+<p align="center">Fig.9 Sub file of Joglekar Memristor</p>
+
+Lastly, the current flowing through the Joglekar memristor can be related to explain the resistance state of the Joglekar memristor. When the Joglekar memristor is in low resistance state and conducting current normally, as proven by the 1V voltage across the Joglekar memristor; current conducting through the Joglekar memristor is in the positive region. However, when the Joglekar memristor is in high resistance state, voltage conducting through the Joglekar memristor will gradually reduce; current through the memristor is conducting through the negative region to reflect the reducing voltage. 
 
 # Installation
 **Note that this software is working only if LTspice XVII is pre-installed**
