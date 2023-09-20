@@ -50,7 +50,9 @@ capacitance, C_p decreases with increasing of distance between two adjacent para
 
 The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters[[4]](#4). For a more detailed explanation please refer to this the image below[[5]](#5). 
 
-
+<p align="center">
+<img width="210" alt="Splitting fringe capacitance of one side to several subcomponents" src="[https://github.com/LyeGuanYan/Memristor/assets/93908638/dfcd2a13-7054-43fd-9522-d1b9662da361](https://github.com/LyeGuanYan/Memristor/assets/93908638/7d8f9216-1316-48fd-8aca-5f4fa34afa5f)">
+</p>
 <p align="center">Fig.2 Splitting fringe capacitance of one side to several subcomponents</p> 
 
 # Methodology
