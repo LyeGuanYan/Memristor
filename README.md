@@ -13,9 +13,12 @@ The tool is significant because it helps to ease the researchers' job and enable
 # What's Memristor Crossbar Array?
 A nanoscale device architecture known as a "nano-crossbar" makes use of an assortment of metal wires or rods arranged in a crossbar pattern with cross points where they connect.
 
+<p align="center">
 <img width="210" alt="Illustration of memristor crossbar" src="https://github.com/LyeGuanYan/Memristor/assets/93908638/dfcd2a13-7054-43fd-9522-d1b9662da361">
+</p>
+<p align="center">Fig.1 Illustration of memristor crossbar[[1]](#1)</p>
 
-Figure above shows the schematic diagram of a memristor cross bar array. In a N x N crossbar structure where memristors are placed in between each pair of vertical bit line (BL) and horizontal world line (WL). Each memristor can be programmed to either HRS or LRS with the control of WLs and BLs voltage. Unlike other semiconductor device, memristor crossbar array requires both the WL and BL to be turned on for both Reading and Writing process. To write a specific memristor in the crossbar, the WL voltage will be controlled such that it will provide enough voltage for a certain period to reach the memristor’s switching threshold. To read data stored in the memristor, the WL voltage will be controlled such that it will provide a reading pulse that will not affect and change the state of the memristor. Output voltage will then be measured across the reference resistor connected at the end of BL. If the memristor is in HRS, the output voltage will be significantly lower than the input reading pulse meaning that the state of memristor is 0. In contrary, if the memristor is in LRS the output voltage will be almost the same as the input and the state of memristor will be 1.
+Fig.1 above shows the schematic diagram of a memristor cross bar array. In a N x N crossbar structure where memristors are placed in between each pair of vertical bit line (BL) and horizontal world line (WL). Each memristor can be programmed to either HRS or LRS with the control of WLs and BLs voltage. Unlike other semiconductor device, memristor crossbar array requires both the WL and BL to be turned on for both Reading and Writing process. To write a specific memristor in the crossbar, the WL voltage will be controlled such that it will provide enough voltage for a certain period to reach the memristor’s switching threshold. To read data stored in the memristor, the WL voltage will be controlled such that it will provide a reading pulse that will not affect and change the state of the memristor. Output voltage will then be measured across the reference resistor connected at the end of BL. If the memristor is in HRS, the output voltage will be significantly lower than the input reading pulse meaning that the state of memristor is 0. In contrary, if the memristor is in LRS the output voltage will be almost the same as the input and the state of memristor will be 1.
 
 # Modelling Memristor Cross Bar Array with parasitic effects
 
@@ -27,7 +30,7 @@ The following mathematical modelling of such parasitic effects in the memristor 
 
 The resistance loss due to wire is calculated by eq.1 and it is dependent on the material of wire, length, and cross section area of the wire.
 
-R = ρl/A
+R = ρl/A 
 
 Where R is the resistance of connecting, ρ is the resistivity of connecting wire and it is affected by types of material of connecting wire, l is the length of connecting wire and A is the cross-sectional area of connecting wire.
 
@@ -47,7 +50,9 @@ capacitance, C_p decreases with increasing of distance between two adjacent para
 
 The second type of capacitive parasitic effect, the boundary stray capacitance is formed between an interconnecting block and substrate plane (usually as ground). This capacitive effect has geometry dependent parameters [61]. For a more detailed explanation please refer to this the image below. 
 
+<p align="center">
 ![Splitting fringe capacitance of one side to several subcomponents](https://github.com/LyeGuanYan/Memristor/assets/93908638/915b86a0-be49-4a24-99c8-9d02254ab37b)
+</p>
 
 # Methodology
 
@@ -66,5 +71,6 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 7. Run the simulation and analyze the results.
 8. Use the manual probing feature to observe the voltage or current across different points in the simulation circuit.
 
-
+# Reference
+<a id="1">[1]</a> M. E. Fouda, A. M. Eltawil, and F. Kurdahi, “Modeling and Analysis of Passive Switching Crossbar Arrays,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 65, no. 1, pp. 270–282, Jan. 2018, doi: 10.1109/TCSI.2017.2714101.
 
