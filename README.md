@@ -30,30 +30,5 @@ To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory us
 7. Run the simulation and analyze the results.
 8. Use the manual probing feature to observe the voltage or current across different points in the simulation circuit.
 
-It is recommended that you read the user guide and other support resources available to you to get the most out of the software tool. If you have any questions or issues, don't hesitate to reach out to the support team for assistance.
-
-
-To analyse and simulate the electrical characteristics of the available electrical memristor models. 
-*Design the nano-cross bar array using selected materials and by considering the line resistance, and parasitic capacitances of the array. 
-*To design the nano-cross bar memory array using the selected memristor model and the size of the array in the electrical simulation tool by an autonomous method. 
-*To automate the entire process so the developed tool can automatically allow the users to select the array size, memristor model and applied input voltage and generates the output simulation results such as write and read operation.
-*To analyse the limitations of the line resistance and the parasitic capacitance effect in the nano-cross bar memory and develop a mitigating solution for the same. 
-
-
-# Installation
-**Note that this software is working only if LTspice XVII is pre-downloaded**
-
-To use the Generic Circuit Level Tool for Evaluation of Nano-Cross Bar Memory using Memristors, follow these steps:
-1. Download and install the software on your computer.
-2. Create an account and log in to the software.
-3. Familiarize yourself with the user interface and the different features available.
-4. Select the memristor model you want to use from the available options.
-5. Choose the startup settings for your simulation, either using the default settings or customizing them to your needs.
-6. Select the conditions for your simulation, such as the size of the memristor array circuit.
-7. Run the simulation and analyze the results.
-8. Use the manual probing feature to observe the voltage or current across different points in the simulation circuit.
-
-It is recommended that you read the user guide and other support resources available to you to get the most out of the software tool. If you have any questions or issues, don't hesitate to reach out to the support team for assistance.
-
 
 
